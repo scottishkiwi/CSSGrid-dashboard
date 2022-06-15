@@ -1,0 +1,108 @@
+@font-face {
+  font-family: kdamthmor;
+  src: url(./fonts/KdamThmorPro-Regular.ttf);
+}
+html {
+  height: 100%;
+  font-family: "kdamthmor", sans-serif;
+  color: black;
+}
+html body {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template: repeat(5, 1fr)/repeat(5, 1fr);
+  background-color: blue;
+}
+html #sidebar {
+  height: 100%;
+  background-color: #f7cb15;
+  grid-row: 1/6;
+  display: grid;
+  grid-template: 90px 1000px/100%;
+}
+html #sidebar h1 {
+  padding-left: 25px;
+  font-size: 35px;
+  margin-top: 25px;
+}
+html #sidebar nav {
+  height: calc(100vh - 90px);
+  display: grid;
+  grid-template: 4fr 1fr/100%;
+}
+html #sidebar ul {
+  padding-left: 25px;
+}
+html #sidebar ul li {
+  font-size: 20px;
+  list-style: none;
+  margin-bottom: 25px;
+}
+html #sidebar ul li a {
+  text-decoration: none;
+  color: black;
+}
+html #sidebar ul li a:hover {
+  cursor: pointer;
+  color: #878e88;
+}
+html #sidebar ul.bottom-sidebar-nav {
+  height: 95px;
+}
+html #header {
+  grid-column: 2/6;
+  background-color: #f55d3e;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(5, 1fr);
+}
+html #header .search {
+  grid-column: 1/4;
+  display: grid;
+  grid-template: 1fr/repeat(8, 1fr);
+}
+html #header .search #site-search {
+  grid-column: 2/9;
+  height: 24px;
+  margin: 35px 5px 5px;
+  border-radius: 10px;
+}
+html #header .search .search-button {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+}
+html #header .profile {
+  grid-column: 4/6;
+  display: grid;
+  grid-template: 1fr/repeat(8, 1fr);
+}
+html #header .profile .notification-button {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  grid-column: 5/6;
+}
+html #header .profile .profile-link {
+  grid-column: 6/9;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+html #header .profile .profile-link:hover {
+  cursor: pointer;
+  color: #878e88;
+}
+html #header .welcome {
+  grid-column: 1/4;
+}
+html #header .action-buttons {
+  grid-column: 4/6;
+}
+html #main-content {
+  grid-row: 2/6;
+  grid-column: 2/6;
+  background-color: white;
+}/*# sourceMappingURL=styles.css.map */
