@@ -7,24 +7,73 @@
     <title>Admin Dashboard</title>
 
     <link href="./styles/styles.css" rel="stylesheet" />
+    <link rel="icon" href="./fonts/handshake-angle-solid.svg" type="image/gif" sizes="16x16">
+
+    <script src="https://kit.fontawesome.com/53f9e01d03.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <aside id="sidebar">
-        <h1>Dashboard</h1>
+        <a href="#">
+           
+            <h1> <i class="fa-solid fa-handshake-angle"></i>ProjectHub</h1>
+        </a>
         <nav>
             <ul class="top-sidebar-nav">
-                <li class="top-sidebar-nav__items"><a href="#">Home</a></li>
-                <li class="top-sidebar-nav__items"><a href="#">Profile</a></li>
-                <li class="top-sidebar-nav__items"><a href="#">Messages</a></li>
-                <li class="top-sidebar-nav__items"><a href="#">History</a></li>
-                <li class="top-sidebar-nav__items"><a href="#">Tasks</a></li>
-                <li class="top-sidebar-nav__items"><a href="#">Communities</a></li>
+                <li class="top-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="top-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                <li class="top-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-message"></i>
+                        Messages
+                    </a>
+                </li>
+                <li class="top-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-clock"></i>
+                        History
+                    </a>
+                </li>
+                <li class="top-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-list-check"></i>Tasks
+                    </a>
+                </li>
+                <li class="top-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-people-group"></i>
+                        Communities
+                    </a>
+                </li>
             </ul>
             <ul class="bottom-sidebar-nav">
-                <li class="bottom-sidebar-nav__items"><a href="#">Settings</a></li>
-                <li class="bottom-sidebar-nav__items"><a href="#">Support</a></li>
-                <li class="bottom-sidebar-nav__items"><a href="#">Privacy</a></li>
+                <li class="bottom-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>Settings
+                    </a>
+                </li>
+                <li class="bottom-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-circle-question"></i>
+                        Support
+                    </a>
+                </li>
+                <li class="bottom-sidebar-nav__items">
+                    <a href="#">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Privacy
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -32,18 +81,24 @@
     
     <header id="header">
         <div class="search">
-            <button class="search-button">
-            </button>
             <input type="search" id="site-search">
+            <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </div>
         <div class="profile">
-            <button class="notification-button"></button>
+            <button class="notification-button">
+                <i class="fa-solid fa-bell"></i>
+            </button>
             <a href="#" class="profile-link">
+                <img src="./avatars/mainav.png" alt="Example profile picture">
+                <!-- <ing class="fa-solid fa-user-astronaut"></i> -->
                 Joe Bloggs
             </a>
         </div>
         <div class="welcome">
-            <img src="" alt="">
+            <img src="./avatars/mainav.png" alt="Example profile picture">
+            <!-- <ing class="fa-solid fa-user-astronaut"></i> -->
             <span id="welcome-message">Hi there,</span>
             <span id="welcome-name">Joe Bloggs (@jbloggs)</span>
         </div>
@@ -64,70 +119,76 @@
             <h3>Your projects</h3>
             <ul class="project-list">
                 <li class="project-list__items">
-                    <span class="project-title"></span>
-                    <p class="project-description">
-
-                    </p>
-                    <div class="project-action-buttons">
-                        <button class="project-action-buttons__button favourite"></button>
-                        <button class="project-action-buttons__button watchlist"></button>
-                        <button class="project-action-buttons__button share"></button>
-                    </div>
+                    <a href="#">
+                        <span class="project-title">Example Project Title</span>
+                        <p class="project-description">
+                            Example project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                        <div class="project-action-buttons">
+                            <button class="project-action-buttons__button favourite"><i class="fa-solid fa-star"></i></button>
+                            <button class="project-action-buttons__button share"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </a>
                 </li>
                 <li class="project-list__items">
-                    <span class="project-title"></span>
-                    <p class="project-description">
-
-                    </p>
-                    <div class="project-action-buttons">
-                        <button class="project-action-buttons__button favourite"></button>
-                        <button class="project-action-buttons__button watchlist"></button>
-                        <button class="project-action-buttons__button share"></button>
-                    </div>
+                    <a href="#">
+                        <span class="project-title">Example Project Title</span>
+                        <p class="project-description">
+                            Example project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                        <div class="project-action-buttons">
+                            <button class="project-action-buttons__button favourite"><i class="fa-solid fa-star"></i></button>
+                            <button class="project-action-buttons__button share"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </a>
                 </li>
                 <li class="project-list__items">
-                    <span class="project-title"></span>
-                    <p class="project-description">
-
-                    </p>
-                    <div class="project-action-buttons">
-                        <button class="project-action-buttons__button favourite"></button>
-                        <button class="project-action-buttons__button watchlist"></button>
-                        <button class="project-action-buttons__button share"></button>
-                    </div>
+                    <a href="#">
+                        <span class="project-title">Example Project Title</span>
+                        <p class="project-description">
+                            Example project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                        <div class="project-action-buttons">
+                            <button class="project-action-buttons__button favourite"><i class="fa-solid fa-star"></i></button>
+                            <button class="project-action-buttons__button share"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </a>
                 </li>
                 <li class="project-list__items">
-                    <span class="project-title"></span>
-                    <p class="project-description">
-
-                    </p>
-                    <div class="project-action-buttons">
-                        <button class="project-action-buttons__button favourite"></button>
-                        <button class="project-action-buttons__button watchlist"></button>
-                        <button class="project-action-buttons__button share"></button>
-                    </div>
+                    <a href="#">
+                        <span class="project-title">Example Project Title</span>
+                        <p class="project-description">
+                            Example project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                        <div class="project-action-buttons">
+                            <button class="project-action-buttons__button favourite"><i class="fa-solid fa-star"></i></button>
+                            <button class="project-action-buttons__button share"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </a>
                 </li>
                 <li class="project-list__items">
-                    <span class="project-title"></span>
-                    <p class="project-description">
-
-                    </p>
-                    <div class="project-action-buttons">
-                        <button class="project-action-buttons__button favourite"></button>
-                        <button class="project-action-buttons__button watchlist"></button>
-                        <button class="project-action-buttons__button share"></button>
-                    </div>
+                    <a href="#">
+                        <span class="project-title">Example Project Title</span>
+                        <p class="project-description">
+                            Example project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                        <div class="project-action-buttons">
+                            <button class="project-action-buttons__button favourite"><i class="fa-solid fa-star"></i></button>
+                            <button class="project-action-buttons__button share"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </a>
                 </li>
                 <li class="project-list__items">
-                    <span class="project-title"></span>
-                    <p class="project-description">
-
-                    </p>
-                    <div class="project-action-buttons">
-                        <button class="project-action-buttons__button favourite"></button>
-                        <button class="project-action-buttons__button watchlist"></button>
-                        <button class="project-action-buttons__button share"></button>
-                    </div>
+                    <a href="#">
+                        <span class="project-title">Example Project Title</span>
+                        <p class="project-description">
+                            Example project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        </p>
+                        <div class="project-action-buttons">
+                            <button class="project-action-buttons__button favourite"><i class="fa-solid fa-star"></i></button>
+                            <button class="project-action-buttons__button share"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -135,25 +196,34 @@
             <h3>Announcements</h3>
             <ul class="announcement-list">
                 <li class="announcement-list__item">
-                    <span class="announcement-title">
-                    </span>
-                    <p class="announcement description">
-
-                    </p>
+                    <a href="#">
+                        <span class="announcement-title">
+                            Site Maintenance
+                        </span>
+                        <p class="announcement description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </a>
                 </li>
                 <li class="announcement-list__item">
-                    <span class="announcement-title">
-                    </span>
-                    <p class="announcement description">
-
-                    </p>
+                    <a href="#">
+                        <span class="announcement-title">
+                            Community Share Day
+                        </span>
+                        <p class="announcement description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </a>
                 </li>
                 <li class="announcement-list__item">
-                    <span class="announcement-title">
-                    </span>
-                    <p class="announcement description">
-
-                    </p>
+                    <a href="#">
+                        <span class="announcement-title">
+                            Updated Privacy Policy
+                        </span>
+                        <p class="announcement description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -161,31 +231,32 @@
             <h3>Trending</h3>
             <ul class="trending-list">
                 <li class="trending-list__items">
-                    <a href="">
-                        <img src="" alt="">
-                        <span class="trending-account"></span>
-                        <span class="trending-project"></span>
+                    <a href="#">
+                        <!--Avatar images created by studiogstock - www.freepik.com-->
+                        <img src="./avatars/avatar1.png" alt="example profile image">
+                        <span class="trending-account">@icanbelieveitsnotbutter</span>
+                        <span class="trending-project">Example Cool Project</span>
                     </a>
                 </li>
                 <li class="trending-list__items">
-                    <a href="">
-                        <img src="" alt="">
-                        <span class="trending-account"></span>
-                        <span class="trending-project"></span>
+                    <a href="#">
+                        <img src="./avatars/avatar2.png" alt="example profile image">
+                        <span class="trending-account">@nevergonnagiveyouup</span>
+                        <span class="trending-project">Life Changing App</span>
                     </a>
                 </li>
                 <li class="trending-list__items">
-                    <a href="">
-                        <img src="" alt="">
-                        <span class="trending-account"></span>
-                        <span class="trending-project"></span>
+                    <a href="#">
+                        <img src="./avatars/avatar3.png" alt="example profile image">
+                        <span class="trending-account">@whoyougonnacall</span>
+                        <span class="trending-project">Game Changer Program</span>
                     </a>
                 </li>
                 <li class="trending-list__items">
-                    <a href="">
-                        <img src="" alt="">
-                        <span class="trending-account"></span>
-                        <span class="trending-project"></span>
+                    <a href="#">
+                        <img src="./avatars/avatar4.png" alt="example profile image">
+                        <span class="trending-account">@devbro</span>
+                        <span class="trending-project">Super Project</span>
                     </a>
                 </li>
             </ul>
